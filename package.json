@@ -1,0 +1,27 @@
+{
+  "name": "rolex-bot",
+  "version": "1.0.0",
+  "description": "Rolex is a multipurpose bot covering many features like security, moderation, logging, and welcomer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "bot",
+    "discord"
+  ],
+  "author": "Faiyaz Ahmed",
+  "private": true,
+  "engines": {
+    "node": ">=16.11.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "mongoose": "^7.4.3"
+  },
+  "overrides": {
+    "discord-api-types": "^0.37.55",
+    "@discordjs/rest": "^2.0.1",
+    "@discordjs/util": "^1.0.1"
+  }
+}
