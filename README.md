@@ -22,7 +22,7 @@ To get started with this code, follow these simple steps:
    node index.js
    ```
 
-5. **Invite the bot to your Discord server and start enjoying music**
+5. **Invite the bot to your Discord server and star this repo**
 
 ## Support
 
